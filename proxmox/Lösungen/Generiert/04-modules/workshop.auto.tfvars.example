@@ -1,0 +1,30 @@
+participant_id       = "p01"
+proxmox_api_url      = "https://10.0.50.20:8006/api2/json"
+proxmox_user         = "terraform-prov@pve"
+proxmox_password     = "Start123$"
+proxmox_tls_insecure = true
+
+proxmox_node_name    = "pve"
+datastore_id         = "local-lvm"
+network_bridge       = "vmbr0"
+template_vm_id       = 902
+ci_username          = "ubuntu"
+nameserver           = "10.0.50.10"
+
+virtual_machines = {
+  vm01 = {
+    vm_id     = 8001
+    ipconfig0 = "ip=10.0.50.150/24,gw=10.0.50.1"
+    cpus      = 2
+    memory_mb = 4096
+    disk_gb   = 100
+  }
+  vm02 = {
+    vm_id        = 8002
+    ipconfig0    = "ip=10.0.50.151/24,gw=10.0.50.1"
+    cpus         = 2
+    memory_mb    = 4096
+    disk_gb      = 100
+    data_disk_gb = 80
+  }
+}

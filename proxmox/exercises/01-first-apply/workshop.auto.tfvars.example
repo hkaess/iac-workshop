@@ -1,0 +1,20 @@
+# Workshop spezifische Werte
+participant_id     = "CHANGEME"
+participant_number = CHANGEME
+
+# Hypervisor spezifische Werte
+proxmox_api_url      = "https://CHANGEME:8006/api2/json"
+proxmox_user         = "CHANGEME@pve"
+proxmox_password     = "CHANGEME"
+proxmox_tls_insecure = true
+proxmox_node_name = "pve"
+datastore_id      = "local-lvm"
+network_bridge    = "vmbr0"
+template_vm_id    = CHANGEME
+
+# VM spezifische Werte
+vm_name_prefix    = "iac-workshop"
+vm_id_base        = 8000
+vm_cpus           = 2
+vm_memory_mb      = 4096
+vm_disk_gb        = 100
