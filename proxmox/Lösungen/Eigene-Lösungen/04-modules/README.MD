@@ -1,1 +1,0 @@
-terraform state mv 'proxmox_vm_qemu.workshop_vm[0]' 'module.proxmox_vm.proxmox_vm_qemu.workshop_vm[0]' && terraform state mv 'proxmox_vm_qemu.workshop_vm[1]' 'module.proxmox_vm.proxmox_vm_qemu.workshop_vm[1]' && terraform state mv 'proxmox_vm_qemu.workshop_vm[2]' 'module.proxmox_vm.proxmox_vm_qemu.workshop_vm[2]'
