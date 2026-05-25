@@ -1,0 +1,23 @@
+# Workshop spezifische Werte
+participant_id     = "CHANGEME"
+participant_number = CHANGEME
+
+# Hypervisor / vCenter Verbindung
+vsphere_server               = "CHANGEME"
+vsphere_user                 = "CHANGEME@vsphere.local"
+vsphere_password             = "CHANGEME"
+vsphere_allow_unverified_ssl = true
+
+# Umgebungsspezifische Werte
+vsphere_datacenter_name = "CHANGEME"
+vsphere_cluster_name    = "CHANGEME"
+vsphere_datastore_name  = "CHANGEME"
+vsphere_network_name    = "CHANGEME"
+vsphere_folder          = null
+template_name           = "CHANGEME"
+
+# VM spezifische Werte
+vm_name_prefix = "iac-workshop"
+vm_cpus        = 2
+vm_memory_mb   = 4096
+vm_disk_gb     = 100
