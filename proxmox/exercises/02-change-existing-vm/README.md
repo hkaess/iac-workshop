@@ -6,25 +6,24 @@ Nach einem ersten Deployment gezielt Aenderungen an bestehender Infrastruktur vo
 
 ## Szenario
 
-Die erste VM laeuft bereits. Jetzt kommen neue Anforderungen aus dem Betrieb: mehr RAM, ein anderer VM-Name fuer die Umgebung und eine zusaetzliche Festplatte fuer Anwendungsdaten.
+Die erste VM laeuft bereits. Jetzt kommen neue Anforderungen aus dem Betrieb: mehr CPU, weniger RAM und eine zusaetzliche Festplatte fuer Anwendungsdaten.
 
 ## Aufgaben
 
-1. Kopiere `workshop.auto.tfvars.example` zu `workshop.auto.tfvars`, falls die Datei noch fehlt.
-2. Passe CPU oder RAM der bestehenden VM an.
-3. Fuege eine zweite Disk fuer Daten hinzu.
-4. Nutze `participant_id` und `environment` im VM-Namen.
+1. Kopiere alle Files ausser der `README.md` aus Aufgabe 1 in diesen Ordner.
+2. Setze die CPU-Anzahl der bestehenden VM auf `4` (vorher: 2).
+3. Setze den RAM der bestehenden VM auf `2048` MB (vorher: 4096 MB).
+4. Fuege der VM eine zweite Disk mit `50 GB` fuer Daten hinzu.
 5. Fuehre `terraform plan` aus und erklaere, welche Aenderungen in-place passieren und was eine Neuanlage triggern wuerde.
 6. Wende die Aenderungen mit `terraform apply` an.
 
 ## Akzeptanzkriterien
 
-- Die bestehende VM wird gezielt aktualisiert.
-- Die zweite Disk ist als eigener Block modelliert.
-- Der VM-Name ist pro Teilnehmendem eindeutig.
+- Die bestehende VM wird gezielt aktualisiert (CPU = 4, RAM = 2048 MB).
+- Die zweite Disk mit 50 GB ist als eigener Block modelliert.
+- Der VM-Name bleibt pro Teilnehmendem eindeutig.
 - Der Plan ist fuer Teilnehmende gut lesbar und diskutierbar.
 
 ## Wo werden Variablen gesetzt?
 
 In `workshop.auto.tfvars` im Verzeichnis dieser Uebung.
-

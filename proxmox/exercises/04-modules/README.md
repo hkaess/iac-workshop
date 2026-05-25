@@ -10,11 +10,11 @@ Das Team moechte kuenftig nicht fuer jede neue VM dieselbe Clone-Logik kopieren.
 
 ## Aufgaben
 
-1. Kopiere alle Files außer der README.md aus Aufgabe 3 in diesen Ordner.
-2. Erstelle unter `modules/proxmox-vm` ein eigenes Terraform-Modul.
-3. Verschiebe die VM-spezifischen Ressourcen aus Uebung 3 in dieses Modul.
-4. Definiere eine saubere Modul-Schnittstelle.
-5. Binde das Modul im Root-Modul unter `main.tf` ein.
+1. Kopiere alle Files ausser der `README.md` aus Aufgabe 3 in diesen Ordner.
+2. Erstelle unter `modules/proxmox-vm` ein eigenes Terraform-Modul mit `main.tf`, `variables.tf` und `outputs.tf`.
+3. Verschiebe die VM-spezifischen Ressourcen (z.B. `proxmox_vm_qemu`) aus Aufgabe 3 in dieses Modul.
+4. Definiere eine saubere Modul-Schnittstelle: Inputs fuer Name, VM-ID, CPU (`4`), RAM (`2048` MB), Disks, Netzwerk; Outputs fuer Name und VM-ID.
+5. Binde das Modul im Root-Modul unter `main.tf` ein und deploye damit weiterhin genau `3` VMs.
 6. Halte Benennung und Struktur so, dass weitere VM-Rollen spaeter leicht hinzukommen.
 7. Stelle sicher, dass `participant_id` in die erzeugten Namen einfliessen kann.
 
@@ -25,3 +25,6 @@ Das Team moechte kuenftig nicht fuer jede neue VM dieselbe Clone-Logik kopieren.
 - Inputs und Outputs sind verstaendlich benannt und wiederverwendbar.
 - Das Modul kann fuer mehrere Teilnehmende parallel genutzt werden, ohne Namenskollisionen zu erzeugen.
 
+## Wo werden Variablen gesetzt?
+
+In `workshop.auto.tfvars` im Verzeichnis dieser Uebung.
