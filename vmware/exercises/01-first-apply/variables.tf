@@ -84,3 +84,9 @@ variable "vm_disk_gb" {
   type    = number
   default = 100
 }
+
+variable "firmware" {
+  type = string
+  default = "efi"
+  description = "Firmware used for the VM. Allowed values are 'bios' and 'efi'"
+}
