@@ -13,7 +13,7 @@ vsphere_datacenter_name = "CHANGEME"
 vsphere_cluster_name    = "CHANGEME"
 vsphere_datastore_name  = "CHANGEME"
 vsphere_network_name    = "CHANGEME"
-vsphere_folder          = null
+vsphere_folder          = "POC-iac-Workshops/test-subfolder"
 template_name           = "CHANGEME"
 
 # VM spezifische Werte
